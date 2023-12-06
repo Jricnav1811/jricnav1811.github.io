@@ -1,0 +1,227 @@
+html,
+body {
+  /* Esto es para que el body ocupe el 99.5% */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  /* Esto es el estilo del body */
+  background-image: url('fotosbody/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+
+}
+
+header {
+  /* Esta es la clase de mi header */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 7vh;
+  margin-top: 5vh;
+  margin: 0.5% 5px;
+  padding: 0 3%;
+  font-size: 1em;
+  align-items: center;
+  background: linear-gradient(to bottom, #A5D0B2 0%, #9BBBEB 100%);
+}
+
+.contenido-header {
+  /* Esta es la clase para el contenido de mi header */
+  display: flex;
+  text-align: center;
+}
+
+.imagen-header {
+  /* Esta es la clase para la imagen de mi header */
+  width: 2vw;
+  height: 4vh;
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-self: flex-start;
+
+}
+
+.nav-button {
+  /* Esta es la clase para los botones de mi barra de navegación */
+  height: 7vh;
+  background-color: rgba(185, 185, 185, 0.11);
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  justify-content: center;
+  box-shadow: 0px 0px 0.5vw #000000;
+  transition: transform 0.05s ease;
+  /* Transición "Ease" con 0,05 segundos de duración */
+}
+
+.fotosheader {
+  display: flex;
+  height: 5vh;
+}
+
+.fotosheader2 {
+  display: flex;
+  height: 4.5vh;
+}
+
+.fotosheader3 {
+  display: flex;
+  height: 4vh;
+}
+
+.nav-button:hover {
+  transform: scale(1.08);
+  /* Aquí la animación hace zoom */
+  box-shadow: 0px 0px 3px #023b5c;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+/* A PARTIR DE AQUÍ EMPIEZA EL CONTENIDO DE LA PÁGINA */
+
+.imagen-1 {
+  /* Esta es la clase de la imagen nº1 del body (Dentro de imagenes-body) */
+  width: 20vw;
+  box-shadow: 0px 0px 2vw #000000;
+  margin-top: 15vh;
+  max-width: 800px;
+  min-width: 200px;
+}
+
+.columna-texto {
+  text-align: center;
+  width: 30em;
+  height: 22em;
+  padding: 2vh;
+  margin-top: 15vh;
+  background-color: #ffffff;
+  border: 0.1vw solid #000000;
+  border-radius: 2vw;
+  /* Aquí le he redondeado los bordes a la columna */
+}
+
+@font-face {
+  font-family: Kinoble;
+  src: url(fotosfuturo/Kinoble-Medium.ttf);
+}
+
+.columna-texto h3 {
+  font-family: Kinoble, sans-serif;
+}
+
+.contenedor-galeria-fotos {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+  padding: 1%;
+  border-style: groove;
+  border-color: rgb(0, 0, 0);
+  text-align: center;
+  background: linear-gradient(to bottom, #A5D0B2 0%, #9BBBEB 100%);
+}
+
+.lista-proyectos {
+  list-style: decimal;
+}
+
+.contenedor-galeria-fotos h2 {
+  font-family: Kinoble, sans-serif;
+}
+
+.img-galeria {
+  width: 14vw;
+  margin-top: 5%;
+}
+
+footer {
+  display: flex;
+  background: linear-gradient(to bottom, #A5D0B2 0%, #9BBBEB 100%);
+  height: 7vh;
+  margin: 0.5% 5px;
+  padding: 0 3%;
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+/* A PARTIR DE AQUÍ ES TODO PARA EL APARTADO DE RESPONSIVIDAD */
+
+@media only screen and (max-width: 600px) {
+  body {
+    height: 100%;
+  }
+
+  header {
+    display: flex;
+    margin-top: 1%;
+    text-align: center;
+    padding: 3vw;
+    width: 91%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-button {
+    width: 6%;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .imagen-1 {
+    display: flex;
+    margin: auto;
+    margin-top: 15%;
+  }
+
+  .columna-texto {
+    max-width: 88%;
+    height: 90%;
+    margin: auto;
+    margin-top: 15%;
+  }
+
+  .contenedor-galeria-fotos {
+    margin: auto;
+    margin-top: 15%;
+    width: 92%;
+  }
+
+  .img-galeria {
+    height: 100%;
+    width: 100%;
+  }
+
+  footer {
+    font-size: 1em;
+    width: 92%;
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 1%;
+    padding: 3vw;
+  }
+
+}

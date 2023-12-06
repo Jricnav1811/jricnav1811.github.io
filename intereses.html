@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Aquí he colocado la ruta de mi CSS -->
+  <link rel="stylesheet" type="text/css" href="intereses.css">
+  <!-- Este es el título de mi página web -->
+  <title>Javier Rico Navarro</title>
+  <!-- Este es el icono de mi página web -->
+  <link rel="icon" href="fotos/icono-pagina.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+
+    <nav>
+      <!-- Botones de mi nav -->
+      <span class="nav-button"><a href="index.html"><img class="fotosheader" src="fotosheader/icon.png"></a></span>
+      <span class="nav-button"><a href="educacion.html"><img class="fotosheader"
+            src="fotosheader/educacion.png"></a></span>
+      <span class="nav-button"><a href="intereses.html"><img class="fotosheader2"
+            src="fotosheader/intereses.png"></a></span>
+      <span class="nav-button"><a href="proyectos.html"><img class="fotosheader2"
+            src="fotosheader/proyectos.png"></a></span>
+      <span class="nav-button"><a href="futuro.html"><img class="fotosheader3"
+            src="fotosheader/planes-de-futuro.png"></a></span>
+    </nav>
+  </header>
+  <div class="contenedor">
+    <div class="imagenboody-y-tabla">
+      <img src="fotosintereses/intereses.jpg" class="imagen-1">
+      <!-- AQUÍ PUEDO INSERTAR DONDE IBA LA TABLA -->
+      <!-- AQUÍ PUEDO INSERTAR DONDE IBA EL SVG WHATSAPP -->
+    </div>
+    <div class="columna-texto"> <!-- Contenedor de la columna de texto de mi página web -->
+      <!-- AQUÍ PUEDO INSERTAR LOS INTERESES EN UNA LISTA ORDENADA -->
+      <ol>
+        <h3>LISTA ORDENADA DE LAS EMPRESAS EN LAS QUE ME GUSTARÍA TRABAJAR</h3>
+        <li>Oracle</li>
+        <br>
+        <li>Rocketfy</li>
+        <br>
+        <li>Inerttia</li>
+        <br>
+        <li>Aeorum</li>
+        <br>
+        <li>AERTEC</li>
+        <br>
+        <li>A2 System</li>
+        <br>
+        <li>3DZings</li>
+        <br>
+        <li>Torsa</li>
+        <br>
+        <li>Atech</li>
+      </ol>
+    </div>
+    <div class="columna-texto2">
+      <h3>LENGUAJES DE PROGRAMACIÓN QUE ME GUSTARÍA APRENDER</h3>
+      <ul>
+        <li>Phyton</li>
+        <br>
+        <li>JavaScript</li>
+        <br>
+        <li>Java</li>
+        <br>
+        <li>C++</li>
+        <br>
+        <li>TypeScript</li>
+        <br>
+        <li>Ruby</li>
+      </ul>
+    </div>
+    <form action="/procesar_formulario" method="post">
+      <h2>Formulario de Contacto</h2>
+      <!-- Campo de texto para el nombre -->
+      <label for="nombre">Nombre completo:</label> <br>
+      <input type="text" id="nombre" name="nombre" required>
+      <br>
+      <br>
+      <!-- Campo de correo electrónico -->
+      <label for="email">Correo Electrónico:</label> <br>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <br>
+      <!-- Campo de teléfono -->
+      <label for="edad">Edad:</label> <br>
+      <input type="number" id="edad" name="edad" required>
+      <br>
+      <br>
+      <!-- Campo de radio -->
+      <label>Soy:</label> <br>
+      <label for="empresa">Empresa</label>
+      <input type="radio" id="Empresa" name="tipo">
+      <label for="particular">Particular</label>
+      <input type="radio" id="Particular" name="tipo">
+      <!-- Campo de texto para el mensaje -->
+      <br>
+      <br>
+      <label for="mensaje">Mensaje:</label> <br>
+      <textarea class="mensaje" id="mensaje" name="mensaje" rows="4" required></textarea>
+      <br>
+      <label for="interes">Interés en hacer entrevista</label>
+      <input type="checkbox" id="interes" name="interes">
+      <br>
+      <br>
+      <!-- Botón de envío del formulario -->
+      <input class="enviar" type="submit" value="Enviar">
+    </form>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <span><b>© 2023 Página de Javier Rico Navarro</b></span>
+  </footer>
+</body>
+
+</html>

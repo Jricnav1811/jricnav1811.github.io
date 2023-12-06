@@ -1,0 +1,275 @@
+html,
+body {
+  /* Esto es para que el body ocupe el 99.5% */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  /* Esto es el estilo del body */
+  background-image: url('fotosbody/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+
+}
+
+header {
+  /* Esta es la clase de mi header */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 7vh;
+  margin-top: 5vh;
+  margin: 0.5% 5px;
+  padding: 0 3%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  /* background: rgba(147, 151, 158, 0.568); */
+  background: linear-gradient(to bottom, #A5D0B2 0%, #9BBBEB 100%);
+}
+
+.contenido-header {
+  /* Esta es la clase para el contenido de mi header */
+  display: flex;
+  text-align: center;
+}
+
+.imagen-header {
+  /* Esta es la clase para la imagen de mi header */
+  width: 2vw;
+  height: 4vh;
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-self: flex-start;
+
+}
+
+.nav-button {
+  /* Esta es la clase para los botones de mi barra de navegación */
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  justify-content: center;
+  box-shadow: 0px 0px 0.5vw #000000;
+  transition: transform 0.05s ease;
+  /* Transición "Ease" con 0,05 segundos de duración */
+}
+
+.fotosheader {
+  display: flex;
+  height: 5vh;
+}
+
+.fotosheader2 {
+  display: flex;
+  height: 4.5vh;
+}
+
+.fotosheader3 {
+  display: flex;
+  height: 4vh;
+}
+
+.nav-button:hover {
+  transform: scale(1.08);
+  /* Aquí la animación hace zoom */
+  box-shadow: 0px 0px 3px #023b5c;
+}
+
+/* A PARTIR DE AQUÍ EMPIEZA EL CONTENIDO DE LA PÁGINA */
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+.imagen-1 {
+  /* Esta es la clase de la imagen nº1 del body (Dentro de imagenes-body) */
+  position: sticky;
+  /* Posición sticky */
+  width: 20vw;
+  box-shadow: 0px 0px 2vw #000000;
+  margin-top: 5vh;
+  margin-right: 22vw;
+  max-width: 800px;
+  min-width: 200px;
+}
+
+.contenedor-grid {
+  margin-top: 5vh;
+  width: 40vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  background-color: rgb(104, 104, 104);
+  padding: 20px;
+  background: linear-gradient(to bottom, #A5D0B2 0%, #9BBBEB 100%);
+}
+
+.h2-grid {
+  width: 10vw;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  grid-row: 1/2;
+  text-align: center;
+}
+
+.p-grid {
+  display: flex;
+  width: 10vw;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+}
+
+.imagen-2 {
+  width: 15vw;
+  margin-top: 15vh;
+  margin-right: 13vw;
+  height: 30vh;
+  transition: transform 2.0s ease;
+}
+
+.imagen-2:hover {
+  transform: translate(600px, 20px) rotate(40deg);
+}
+
+.titulo-y-mapa {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  height: 50vh;
+  background: linear-gradient(to bottom, #A5D0B2 0%, #9BBBEB 100%);
+  border-color: #000000;
+  border-style: groove;
+  padding: 10px;
+}
+
+@font-face {
+  font-family: Kinoble;
+  src: url(fotosfuturo/Kinoble-MediumItalic.ttf) format(truetype);
+}
+
+.titulo-y-mapa h1 {
+  font-family: Kinoble, sans-serif;
+}
+
+.mapa {
+  margin: auto;
+  margin-bottom: 6vh;
+}
+
+footer {
+  display: flex;
+  background: linear-gradient(to bottom, #A5D0B2 0%, #9BBBEB 100%);
+  height: 7vh;
+  margin: 0.5% 5px;
+  padding: 0 3%;
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+/* A PARTIR DE AQUÍ ES TODO PARA EL APARTADO DE RESPONSIVIDAD */
+
+@media only screen and (max-width: 600px) {
+  
+  header {
+    display: flex;
+    margin-top: 1%;
+    text-align: center;
+    padding: 3vw;
+    width: 91%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-button {
+    width: 6%;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .imagen-1 {
+    display: flex;
+    margin: auto;
+    margin-top: 15%;
+  }
+
+  .contenedor-grid {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 10px;
+    margin-top: 15%;
+    width: 85%;
+  }
+
+  .h2-grid {
+    margin: auto;
+    width: 50%;
+  }
+
+  .p-grid {
+    width: 50%;
+    margin: auto;
+  }
+
+  .p-grid p {
+    margin: auto;
+  }
+
+  .h2-grid h2 {
+    margin: auto;
+  }
+
+  .imagen-2 {
+    margin: auto;
+    width: 80%;
+  }
+
+  .titulo-y-mapa,
+  .mapa {
+    margin: auto;
+    width: 90%;
+  }
+
+  .titulo-y-mapa h1 {
+    text-align: center;
+  }
+
+  footer {
+    font-size: 1em;
+    width: 92%;
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 1%;
+    padding: 3vw;
+  }
+
+}

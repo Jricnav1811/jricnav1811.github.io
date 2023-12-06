@@ -1,0 +1,280 @@
+html,
+body {
+  /* Esto es para que el body ocupe el 99.5% */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  /* Esto es el estilo del body */
+  background-image: url('fotosbody/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+
+}
+
+header {
+  /* Esta es la clase de mi header */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 7vh;
+  margin-top: 5vh;
+  margin: 0.5% 5px;
+  padding: 0 3%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  background: linear-gradient(to bottom, #A5D0B2 0%, #9BBBEB 100%);
+}
+
+.contenido-header {
+  /* Esta es la clase para el contenido de mi header */
+  display: flex;
+  text-align: center;
+}
+
+.imagen-header {
+  /* Esta es la clase para la imagen de mi header */
+  width: 2vw;
+  height: 4vh;
+  max-width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  align-self: flex-start;
+
+}
+
+.nav-button {
+  /* Esta es la clase para los botones de mi barra de navegación */
+  height: 7vh;
+  background-color: rgba(185, 185, 185, 0.11);
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  justify-content: center;
+  box-shadow: 0px 0px 0.5vw #000000;
+  transition: transform 0.05s ease;
+  /* Transición "Ease" con 0,05 segundos de duración */
+}
+
+.fotosheader {
+  display: flex;
+  height: 5vh;
+}
+
+.fotosheader2 {
+  display: flex;
+  height: 4.5vh;
+}
+
+.fotosheader3 {
+  display: flex;
+  height: 4vh;
+}
+
+.nav-button:hover {
+  transform: scale(1.08);
+  /* Aquí la animación hace zoom */
+  box-shadow: 0px 0px 3px #023b5c;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+/* A PARTIR DE AQUÍ EMPIEZA EL CONTENIDO DE LA PÁGINA */
+
+.imagen-1 {
+  /* Esta es la clase de la imagen nº1 del body (Dentro de imagenes-body) */
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 23vh;
+  box-shadow: 0px 0px 2vw #000000;
+  margin-top: 12vh;
+  max-width: 800px;
+  min-width: 200px;
+}
+
+.imagen-2-education {
+  /* Esta es la clase de la imagen nº1 del body (Dentro de imagenes-body) */
+  width: 17vw;
+  box-shadow: 0px 0px 2vw #000000;
+  margin-top: 4vh;
+  margin-left: 1.5vw;
+  max-width: 800px;
+  min-width: 200px;
+}
+
+.imagen-3-education {
+  /* Esta es la clase de la imagen nº1 del body (Dentro de imagenes-body) */
+  width: 17vw;
+  box-shadow: 0px 0px 2vw #000000;
+  margin-top: 12vh;
+  margin-left: 1.5vw;
+  max-width: 800px;
+  min-width: 200px;
+}
+
+.imagen-logo-education {
+  /* Esta es la clase de la imagen nº1 del body (Dentro de imagenes-body) */
+  width: 17vw;
+  box-shadow: 0px 0px 2vw #000000;
+  margin-top: 1vh;
+  margin-left: 1.5vw;
+  max-width: 800px;
+  min-width: 200px;
+}
+
+.imagen-logo-education2 {
+  /* Esta es la clase de la imagen nº1 del body (Dentro de imagenes-body) */
+  width: 20vw;
+  height: 13vh;
+  box-shadow: 0px 0px 2vw #000000;
+  margin-top: 1vh;
+  max-width: 800px;
+  min-width: 200px;
+}
+
+.contenedor-imagen-3-education {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-columna-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: Kinoble;
+  src: url(fotosfuturo/Kinoble-Medium.ttf);
+}
+
+.info-container-education h1 {
+  font-family: Kinoble, sans-serif;
+}
+
+.columna-texto-education {
+  text-align: center;
+  width: 42em;
+  height: 22em;
+  padding-bottom: 3vh;
+  margin-top: 0.5vh;
+  background-color: #ffffff;
+  border: 0.1vw solid #000000;
+  border-radius: 2vw;
+  /* Aquí le he redondeado los bordes a la columna */
+  margin-left: 2vw;
+}
+
+.info-container-education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2vw;
+}
+
+footer {
+  display: flex;
+  background: linear-gradient(to bottom, #A5D0B2 0%, #9BBBEB 100%);
+  height: 7vh;
+  margin: 0.5% 5px;
+  padding: 0 3%;
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+/* A PARTIR DE AQUÍ ES TODO PARA EL APARTADO DE RESPONSIVIDAD */
+
+@media only screen and (max-width: 600px) {
+
+  header {
+    display: flex;
+    margin-top: 1%;
+    text-align: center;
+    padding: 3vw;
+    width: 91%;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-button {
+    width: 6%;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .imagen-1 {
+    display: flex;
+    margin: auto;
+    margin-top: 15%;
+    height: 135px;
+  }
+
+  .imagen-logo-education2 {
+    display: flex;
+    margin: auto;
+    margin-top: 0.5%;
+    justify-content: center;
+  }
+
+  .imagen-3-education {
+    display: flex;
+    margin: auto;
+    margin-top: 15%;
+    justify-content: center;
+  }
+
+  .imagen-2-education {
+    margin: auto;
+    margin-top: 15%;
+  }
+
+  .imagen-logo-education {
+    display: flex;
+    margin: auto;
+    margin-top: 0.5%;
+    justify-content: center;
+  }
+
+  .columna-texto-education {
+    max-width: 88%;
+    height: 90%;
+    margin: auto;
+    margin-top: 15%;
+  }
+
+  footer {
+    font-size: 1em;
+    width: 92%;
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 1%;
+    padding: 3vw;
+  }
+
+}
